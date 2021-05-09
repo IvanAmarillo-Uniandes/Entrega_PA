@@ -4,6 +4,10 @@ describe('F5 - Gestor de Log In', () => {
     
     const ghost = new GhostPost()
 
+    it("Entering wrong credentials", () => {
+        ghost.loginIncorrecto();       
+    });
+
     it('Should login successfuly', () => {
         ghost.login()
     })

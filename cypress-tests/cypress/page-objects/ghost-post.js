@@ -1,4 +1,5 @@
 import { LoremIpsum } from "lorem-ipsum";
+const faker = require('faker');
 
 const lorem = new LoremIpsum({
   sentencesPerParagraph: {
@@ -20,6 +21,13 @@ export class GhostPost {
         cy.visit('ghost/#/signin')
         cy.get('#ember8').type(Cypress.env('email'))
         cy.get('#ember10').type(Cypress.env('pass'))
+        cy.get('#login').submit()
+    }
+
+    loginIncorrecto() {
+        cy.visit('ghost/#/signin')
+        cy.get('#ember8').type(faker.internet.email())
+        cy.get('#ember10').type(faker.internet.password())
         cy.get('#login').submit()
     }
 
