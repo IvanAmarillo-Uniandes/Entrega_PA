@@ -11,7 +11,7 @@ describe('F1 - Gestionar Posts', () => {
         ghost.goPosts()
     })
 
-    it('Should select lasted post and publish it', () => {
+    it('E01 - Crear nuevo post y publicar', () => {
         ghost.createDraftPost()
         ghost.goPosts()
         ghost.selectLastedPost()
@@ -20,7 +20,7 @@ describe('F1 - Gestionar Posts', () => {
             .should('have.class', 'gh-btn-green')
     })
 
-    it('Should edit the post title', () => {
+    it('E02 - Editar titulo del Post', () => {
         ghost.selectLastedPost()
         cy.get('.gh-editor-title').clear()
         cy.get('.gh-editor-title').type('The title have been edited')
@@ -31,14 +31,14 @@ describe('F1 - Gestionar Posts', () => {
             .should('have.value', 'The title have been edited')
     })
 
-    it('Should change the status to unpublished', () => {
+    it('E03 - Cambiar el estado del Post a unpublished', () => {
         ghost.selectPublishedPost()
         ghost.changePostStatus()
         cy.get('footer.gh-publishmenu-footer button.gh-publishmenu-button')
             .should('have.class', 'gh-btn-green')
     })
 
-    it('Should delete a post', () => {
+    it('E04 - Eliminar post', () => {
         ghost.selectLastedPost()
         ghost.openPostSettings()
         cy.get('button.settings-menu-delete-button').click()
