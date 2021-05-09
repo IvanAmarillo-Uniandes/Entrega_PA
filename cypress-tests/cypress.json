@@ -3,9 +3,16 @@
     "defaultCommandTimeout": 8000,
     "viewportWidth": 1920,
     "viewportHeight": 1080,
+    "chromeWebSecurity":false,
     "env" : {
         "baseUrl": "http://localhost:2368/",
         "email" : "g.rosales@uniandes.edu.co",
-        "pass": "misociclo2"
+        "pass": "misociclo2",
+        "baseUrl_2":"http://localhost:2368/ghost/",
+        "userEmail":"id.amarillo224@uniandes.edu.co",
+        "userPsswd":"rock1020736329fantasma",
+        "userEmail_selector":"#ember8",
+        "userPsswd_selector":"#ember10",
+        "loginButton_selector":"#ember12 > span"
     }
 }
