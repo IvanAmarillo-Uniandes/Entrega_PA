@@ -29,14 +29,21 @@ export class GhostPost {
 
     createDraftPost() {
         cy.get('section.view-actions > a[href="#/editor/post/"]').click({force: true})
-        cy.get('.gh-editor-title').type(lorem.generateSentences(1)).invoke('val').then(val => {
-            const postTitle = val
-            console.log(postTitle)
-        })
+        cy.get('.gh-editor-title').type(lorem.generateSentences(1)).invoke('val')
+            .then(val => {
+                const postTitle = val
+                console.log(postTitle)
+            })
     }
 
-    selectPost() {
-        cy.get('ol.posts-list',{ timeout: 10000 }).find('li.gh-posts-list-item > a').first().click({ force: true })
+    selectLastedPost() {
+        cy.get('ol.posts-list', { timeout: 10000 })
+            .find('li.gh-posts-list-item > a').first().click({ force: true })
+    }
+
+    selectPublishedPost() {
+        cy.get('ol.posts-list li', { timeout: 10000 })
+            .find('a.gh-post-list-status > div > span.gh-content-status-published').first().click({ force: true })
     }
 
     publishPost() {
@@ -47,5 +54,13 @@ export class GhostPost {
     openPostSettings() {
         cy.url({ timeout: 10000 }).should('contain', '/editor/post/')
         cy.get('button.post-settings').click()
+    }
+
+    changePostStatus() {
+        cy.get('div.gh-publishmenu-trigger').click()
+        cy.get('section.gh-publishmenu-section div.gh-publishmenu-radio').first().click()
+        cy.get('div.gh-publishmenu-radio').first()
+            .should('have.class', 'active')
+        cy.get('footer.gh-publishmenu-footer button.gh-publishmenu-button').click()
     }
 }
