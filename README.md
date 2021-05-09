@@ -1,5 +1,7 @@
 # Entrega_PA
-Repositorio para la entrega de pruebas automatizadas utilizando Kraken y una herramienta a seleccion (Cypress/Playwright/Puppeteer)
+Repositorio para la entrega de pruebas automatizadas utilizando Cypress y Kraken.
+
+El detalle de la instalacion, configurcion se encentra en la carpeta que coressponde a cada herramienta.
 
 # Funcionalidades
 | Id           | Nombre Funcionalidad                                              | Resumen                                                                                                      | Encargado |
@@ -10,7 +12,7 @@ Repositorio para la entrega de pruebas automatizadas utilizando Kraken y una her
 | [F4](F4) | Gestionar Tags | Revisar el gestor de tags y la actualización de estos |@CarlosPintoVacacela | 
 | [F5](F5) | Gestor de Log In | Revisar el proceso de log in y autenticación para acceder al aplicativo | Todos |
 
-# Escenarios de priebas
+# Escenarios de pruebas
 
 ## F1
 
