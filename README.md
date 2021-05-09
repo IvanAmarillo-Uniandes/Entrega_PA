@@ -38,3 +38,12 @@ El detalle de la instalacion, configurcion se encentra en la carpeta que coressp
 |     |                             | 3. Seleccionar un Post  | | 
 |     |                             | 5. Abrir configuraciones | | 
 |     |                             | 4. Seleccionar "Delete post" | |
+
+##  F3 Funcionalidad Gestionar Staff 
+
+| ID| Nombre | Pasos | Resultado esperado |
+| - |  -     |  -    | - |
+|E01|**Invite people**| **1.** Ingresar al panel de Staff. <br> **2.** Seleccionar en el menú el link de Staff. <br> **3.** Hacer click en el botón Invite people. <br> **4.** Ingresar datos de Email Address. <br> **5.** Seleccionar el Role. <br> **6.** Darc click en el botón  Send invitation now.| El usuario es registrado y se puede ver en el listado de Staff users.  |
+|E02|**Tets elimina los datos del primer usuarias invitadas**  |**1.** Al ver el listado de Staff users.<br>**2.** Hacer click en el link REVOKE.<br>**3.** El usuarias invitadas se elimina de la lista. | Se eliminan el registro del usuario seleccionado y desaparece del listado de Staff users. |
+|E03|**Tets reenviar acceso de registro al usuario invitado** |**1.** Al ver el listado de Staff users. <br>**2.** Hacer click en el link RESEND. (Invitation sent: an hour ago, expires in 7 days)  <br>**3.** El usuarias invitadas se recibe de nuevo los datos de acceso.  | Se evidencia el mesaje de envio de correo al usuario reenviado.|
+|E04|**Tets accede a los datos del usuario registrado**|**1.** Al ver el listado de ACTIVE USERS. <br>**2.** Hacer click en el sobre el.  <br>**3.** El usuario accede a esta opción se puede ver la información de: foto de perfil, Full Name, Slug, Email,  Location, Website, etc. | Al seleccionar el usuario del listado de de ACTIVE USERS, lo direcciona a la ventana donde se puede ver la información del usuario seleccionado. |
