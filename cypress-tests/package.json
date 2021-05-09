@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "lorem-ipsum": "^2.0.3"
+  },
+  "devDependencies": {
+    "cypress-xpath": "^1.6.2"
+  }
+}

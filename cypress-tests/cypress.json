@@ -1,0 +1,11 @@
+{
+    "baseUrl": "http://localhost:2368/",
+    "defaultCommandTimeout": 8000,
+    "viewportWidth": 1920,
+    "viewportHeight": 1080,
+    "env" : {
+        "baseUrl": "http://localhost:2368/",
+        "email" : "g.rosales@uniandes.edu.co",
+        "pass": "misociclo2"
+    }
+}
