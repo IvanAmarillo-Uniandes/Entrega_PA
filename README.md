@@ -6,11 +6,11 @@ El detalle de la instalacion, configurcion se encentra en la carpeta que coressp
 # Funcionalidades
 | Id           | Nombre Funcionalidad                                              | Resumen                                                                                                      | Encargado |
 | ------------ | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------- |
-| [F1](F1) | Gestionar Posts | Revisar el gestor de publicaciones y la actualización de estas |@ginettrosales| 
-| [F2](F2) | Gestionar Pages | Revisar el gestor de páginas y la actualización de estas |@IvanAmarillo-Uniandes | 
-| [F3](F3) | Gestionar Staff | Revisar el gestor de usuarios y la actualización de estos |@mgaitans| 
-| [F4](F4) | Gestionar Tags | Revisar el gestor de tags y la actualización de estos |@CarlosPintoVacacela | 
-| [F5](F5) | Gestor de Log In | Revisar el proceso de log in y autenticación para acceder al aplicativo | Todos |
+| [F1](../../wiki/F1) | Gestionar Posts | Revisar el gestor de publicaciones y la actualización de estas |@ginettrosales| 
+| [F2](../../wiki/../../wiki/F2) | Gestionar Pages | Revisar el gestor de páginas y la actualización de estas |@IvanAmarillo-Uniandes | 
+| [F3](../../wiki/F3) | Gestionar Staff | Revisar el gestor de usuarios y la actualización de estos |@mgaitans| 
+| [F4](../../wiki/F4) | Gestionar Tags | Revisar el gestor de tags y la actualización de estos |@CarlosPintoVacacela | 
+| [F5](../../wiki/F5) | Gestor de Log In | Revisar el proceso de log in y autenticación para acceder al aplicativo | Todos |
 
 # Escenarios de pruebas
 
