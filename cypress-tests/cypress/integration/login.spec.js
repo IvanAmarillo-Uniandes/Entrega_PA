@@ -12,4 +12,9 @@ describe('F5 - Gestor de Log In', () => {
         ghost.login()
     })
     
+    it('Should have error of login failed', () => {
+        ghost.loginUserOnly()
+        cy.get('p.main-error').should('contain', 'Please fill')
+
+    })
 })
