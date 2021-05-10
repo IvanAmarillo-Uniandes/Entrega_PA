@@ -48,7 +48,32 @@ El detalle de la instalacion, configurcion se encentra en la carpeta que coressp
 |E03|**Tets reenviar acceso de registro al usuario invitado** |**1.** Al ver el listado de Staff users. <br>**2.** Hacer click en el link RESEND. (Invitation sent: an hour ago, expires in 7 days)  <br>**3.** El usuarias invitadas se recibe de nuevo los datos de acceso.  | Se evidencia el mesaje de envio de correo al usuario reenviado.|
 |E04|**Tets accede a los datos del usuario registrado**|**1.** Al ver el listado de ACTIVE USERS. <br>**2.** Hacer click en el sobre el.  <br>**3.** El usuario accede a esta opción se puede ver la información de: foto de perfil, Full Name, Slug, Email,  Location, Website, etc. | Al seleccionar el usuario del listado de de ACTIVE USERS, lo direcciona a la ventana donde se puede ver la información del usuario seleccionado. |
 
+## F4
 
+| ID           | Nombre                                              | Pasos                                                                                                      | Resultado esperado |
+| ------------ | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------- |
+| E01 | Editar un tag publico | 1. Iniciar sesion como administrador  | El tag se debe actualizar con los datos ingresados y mostrar el botón Saved en color verde |
+|     |                             | 2. Ir a la sección de Tags | |
+|     |                             | 3. Seleccionar un tag  | | 
+|     |                             | 4. Cambiar los campos del tag | | 
+|     |                             | 5. Seleccionar Guardar | | 
+
+| E02 | Editar un tag interno | 1. Iniciar sesion como administrador | El tag se debe actualizar con los datos ingresados y mostrar el botón Saved en color verde |
+|     |                             | 2. Ir a la sección de tags | |
+|     |                             | 3. Seleccionar la sección de Tags Internos  | | 
+|     |                             | 4. Seleccionar un tag  | | 
+|     |                             | 5. Cambiar los campos del tag | | 
+|     |                             | 6. Seleccionar Guardar | | 
+| E03 | Eliminar un tag publico | 1. Iniciar sesion como administrador | El tag se debe eliminar y desaparecer de la lista de tags |
+|     |                             | 2. Ir a la sección de tags | |
+|     |                             | 3. Seleccionar un tag | | 
+|     |                             | 4. Presionar elbotón Eliminar | |  
+|     |                             | 5. Confirmar eliminar | |  
+| E04 | Ingresar demasiados caracteres en descripción de tag | 1. Iniciar sesion como administrador | Debe aparecer un mensaje con el error y no actualizarce la información|
+|     |                             | 2. Ir a la sección de Tags | |
+|     |                             | 3. Seleccionar un tag  | | 
+|     |                             | 4. Ingresar mas de 500 caractere en la descripción | | 
+|     |                             | 5. Seleccionar Guardar | | 
 
 ## F5 - Funcionalidad Gestor de LogIn
 
@@ -56,3 +81,4 @@ El detalle de la instalacion, configurcion se encentra en la carpeta que coressp
 | - |  -     |  -    | - |
 |E01|**Ingresar credenciales incorrectas**| **1.** Ingresar a la pagina de logueo. <br> **2.** Se ingresa usuario, para este este el correo (incorrecto). <br> **3.** Se ingresa password, para este caso clave de acceso (incorresta). <br> **4.** Hacer click en el botón Ingresar. <br>| El Sistema le informa al usuario que sus credenciales de acceso son incorrectos, sin permitir el acceso.  |
 |E02|**Debe iniciar sesión correctamente**  |**1.** Ingresar a la pagina de logueo. <br> **2.** Se ingresa usuario, para este este el correo. <br> **3.** Se ingresa password, para este caso clave de acceso. <br> **4.** Hacer click en el botón Ingresar. <br>| El Sistema le informa al usuario que sus credenciales de acceso son correctas, y le permite el acceso.  |
+|E03|**Ingresar solo usuario**  |**1.** Ingresar a la pagina de logueo. <br> **2.** Se ingresa usuario, para este este el correo. <br>  **3.** Hacer click en el botón Ingresar. <br>| El Sistema le informa al usuario que debe completar todos los campos.  |
