@@ -57,7 +57,6 @@ El detalle de la instalacion, configurcion se encentra en la carpeta que coressp
 |     |                             | 3. Seleccionar un tag  | | 
 |     |                             | 4. Cambiar los campos del tag | | 
 |     |                             | 5. Seleccionar Guardar | | 
-
 | E02 | Editar un tag interno | 1. Iniciar sesion como administrador | El tag se debe actualizar con los datos ingresados y mostrar el botón Saved en color verde |
 |     |                             | 2. Ir a la sección de tags | |
 |     |                             | 3. Seleccionar la sección de Tags Internos  | | 
