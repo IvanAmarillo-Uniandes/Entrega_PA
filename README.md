@@ -39,6 +39,39 @@ El detalle de la instalacion, configurcion se encentra en la carpeta que coressp
 |     |                             | 5. Abrir configuraciones | | 
 |     |                             | 4. Seleccionar "Delete post" | |
 
+## F2
+
+| ID           | Nombre                                              | Pasos                                                                                                      | Resultado esperado |
+| ------------ | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------- |
+| E01 | Crear nuevo Page como Draft | 1. Iniciar sesión como administrador  | El Page se debe agregar en la lista de Pages y el estado debe ser Draft |
+|     |                             | 2. Ir a la lista de Pages | |
+|     |                             | 3. Crear nuevo Page | | 
+|     |                             | 4. Agregar titulo del Page | | 
+|     |                             | 5. Salir del editor de Page a ventana de Pages | |
+| E02 | Editar titulo del Page existente | 1. Iniciar sesión como administrador | El titulo del Page debe mostrarse actualizado con éxito|
+|     |                             | 2. Ir a la lista de Pages | |
+|     |                             | 3. Seleccionar el Page existente  | | 
+|     |                             | 4. Cambiar el título del Page| |  
+|     |                             | 5. Salir del editor del Page a ventana de Pages | | 
+| E03 | Publicar el Page existente | 1. Iniciar sesión como administrador | El estado del Page debe mostrar  "Published" |
+|     |                             | 2. Ir a la lista de Pages | |
+|     |                             | 3. Seleccionar un Page en estado "Draft" | | 
+|     |                             | 4. Ingresar a menú de estado | |
+|     |                             | 5. Click en botón para publicar Page | |
+|     |                             | 6. Salir del editor del Page a ventana de Pages | |
+| E04 | Agregar Tag a Page existente | 1. Iniciar sesión como administrador | El estado del Page debe mostrar el Tag ingresado |
+|     |                             | 2. Ir a la lista de Pages | |
+|     |                             | 3. Seleccionar el Page existente | | 
+|     |                             | 4. Ingresar a menú de settings | |
+|     |                             | 5. Agregar nuevo Tag en campo respectivo | |
+|     |                             | 6. Salir del editor del Page a ventana de Pages | |  
+| E05 | Eliminar Page | 1. Iniciar sesión como administrador | El Page debe ser eliminado con éxito|
+|     |                             | 2. Ir a la lista de Page | |
+|     |                             | 3. Seleccionar el Page existente | | 
+|     |                             | 5. Ingresar al menú de settings | | 
+|     |                             | 4. Seleccionar "Delete" para borrar el Page | |
+|     |                             | 5. Salir del editor del Page a ventana de Pages | | 
+
 ##  F3 Funcionalidad Gestionar Staff 
 
 | ID| Nombre | Pasos | Resultado esperado |
