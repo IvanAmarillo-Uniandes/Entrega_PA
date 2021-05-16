@@ -1,7 +1,6 @@
-
 import { GhostPost } from "../page-objects/ghost-post";
 
-describe('F1', () => {
+describe('Post', () => {
     
     const ghost = new GhostPost()
 
@@ -15,7 +14,7 @@ describe('F1', () => {
         cy.screenshot()
     })
 
-    it('E01 - Crear nuevo post y publicar', () => {
+    it('E01-Crear nuevo post y publicar', () => {
         ghost.createDraftPost()
         ghost.goPosts()
         ghost.selectLastedPost()
@@ -24,7 +23,7 @@ describe('F1', () => {
             .should('have.class', 'gh-btn-green')
     })
 
-    it('E02 - Editar titulo del Post', () => {
+    it('E02-Editar titulo del Post', () => {
         ghost.selectLastedPost()
         cy.get('.gh-editor-title').clear()
         cy.get('.gh-editor-title').type('The title have been edited')
@@ -35,14 +34,14 @@ describe('F1', () => {
             .should('have.value', 'The title have been edited')
     })
 
-    it('E03 - Cambiar el estado del Post a unpublished', () => {
+    it('E03-Cambiar el estado del Post a unpublished', () => {
         ghost.selectPublishedPost()
         ghost.changePostStatus()
         cy.get('footer.gh-publishmenu-footer button.gh-publishmenu-button')
             .should('have.class', 'gh-btn-green')
     })
 
-    it('E04 - Eliminar post', () => {
+    it('E04-Eliminar post', () => {
         ghost.selectLastedPost()
         ghost.openPostSettings()
         cy.get('button.settings-menu-delete-button').click()

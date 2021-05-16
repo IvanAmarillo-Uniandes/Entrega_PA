@@ -1,6 +1,7 @@
 /// <reference types="cypress-xpath" />
 const faker = require('faker');
-describe('staff', () => {
+
+describe('Staff', () => {
 
     beforeEach(() => {
         cy.visit(Cypress.env('baseUrl')+'ghost/#/signin');
@@ -14,36 +15,24 @@ describe('staff', () => {
         cy.screenshot()
     })
     
-    it('Tets creating an invitation to a staff', () => { 
+    it('E01-Crear invitacion', () => { 
         cy.get("button.gh-btn.gh-btn-green").click();
         cy.get("#new-user-email").type(faker.internet.email());
         cy.get("div.modal-footer > button > span").click({force: true});
     })
 
-    it('Tets deletes the data of the first guest users', () => { 
+    it('E02-Elimina los datos del primer usuario invitado', () => { 
         cy.get(":nth-child(1) > .apps-card-app > .apps-card-right > .apps-configured > .red-hover").click({force: true});
     })
 
-    it('Tets resend an invitation to a staff', () => { 
+    it('E03-Reenviar acceso de registro al usuario invitado', () => { 
         cy.get(":nth-child(1) > .apps-card-app > .apps-card-right > .apps-configured > .green-hover").click({force: true});
     })
 
-    it('Tets accesses the data of the registered user and imagen', () => { 
+    it('E04-Accede a los datos del usuario registrado', () => { 
         cy.get(".apps-card-app > .apps-card-right > .apps-configured").click({force: true});
         cy.get(".edit-user-image").click({force: true});
         cy.visit(Cypress.env('baseUrl')+'ghost/#/staff');
         cy.get(".w3").click({force: true});                
     })
-
- 
-    
-    
-
-    
-
-
-    
-
- 
- 
 })

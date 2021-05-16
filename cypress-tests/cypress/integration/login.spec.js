@@ -1,6 +1,6 @@
 import { GhostPost } from "../page-objects/ghost-post";
 
-describe('F5', () => {
+describe('Login', () => {
 
     afterEach(() => {
         cy.screenshot()
@@ -16,7 +16,7 @@ describe('F5', () => {
         ghost.login()
     })
     
-    it('E03-Should have error of login failed', () => {
+    it('E03-Ingresar solo usuario', () => {
         ghost.loginUserOnly()
         cy.get('p.main-error').should('contain', 'Please fill')
 

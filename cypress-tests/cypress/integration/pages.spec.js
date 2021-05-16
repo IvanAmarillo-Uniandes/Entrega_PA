@@ -11,7 +11,7 @@
           content
 -------------------------------*/
 
-describe('F2', () => {
+describe('Pages', () => {
     beforeEach(() => {
         //Arrange
         cy.visit('ghost/#/signin')
