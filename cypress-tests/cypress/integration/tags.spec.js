@@ -18,6 +18,7 @@ describe('Tags', () => {
     })
 
     it('E01-Editar un tag publico', () => {
+        ghost.createTag()
         ghost.selectTag()
         cy.get('#tag-name').clear()
         cy.get('#tag-name').type('New Tag')
@@ -33,6 +34,7 @@ describe('Tags', () => {
     })
 
     it('E02-Editar un tag interno', () => {
+        ghost.createTag(true)
         ghost.selectInternalTag()
         cy.get('#tag-name').clear()
         cy.get('#tag-name').type('#EditedTag')
@@ -48,6 +50,7 @@ describe('Tags', () => {
     })
 
     it('E03-Eliminar un tag publico', () => {
+        ghost.createTag()
         ghost.selectTag()
         cy.get('button.gh-btn-red > span').contains('Delete').click({ force: true })
         cy.get('section.modal-content').find('div.modal-footer').find('button.gh-btn-red > span').contains('Delete').click({ force: true })
@@ -57,6 +60,7 @@ describe('Tags', () => {
     })
 
     it('E04-Ingresar demasiados caracteres en descripción de tag', () => {
+        ghost.createTag()
         ghost.selectTag()
         cy.get('#tag-description').clear()
         cy.get('#tag-description').type(lorem.generateParagraphs(2))

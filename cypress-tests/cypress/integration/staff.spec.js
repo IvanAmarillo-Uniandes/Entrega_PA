@@ -1,4 +1,4 @@
-/// <reference types="cypress-xpath" />
+//<reference types="cypress-xpath" />
 const faker = require('faker');
 
 describe('Staff', () => {

@@ -1,5 +1,5 @@
 {
-    "baseUrl": "http://localhost:2369/",
+    "baseUrl": "http://localhost:2368/",
     "defaultCommandTimeout": 10000,
     "viewportWidth": 1920,
     "viewportHeight": 1080,
@@ -8,12 +8,12 @@
     "screenshotOnRunFailure": true,
     "trashAssetsBeforeRuns": true,
     "env" : {
-        "baseUrl": "http://localhost:2369/",
+        "baseUrl": "http://localhost:2368/",
         "email" : "g.rosales@uniandes.edu.co",
         "pass": "misociclo2",
-        "baseUrl_2":"http://localhost:2369/ghost/",
-        "userEmail":"id.amarillo224@uniandes.edu.co",
-        "userPsswd":"rock1020736329fantasma",
+        "baseUrl_2":"http://localhost:2368/ghost/",
+        "userEmail":"g.rosales@uniandes.edu.co",
+        "userPsswd":"misociclo2",
         "userEmail_selector":"#ember8",
         "userPsswd_selector":"#ember10",
         "loginButton_selector":"#ember12 > span"
