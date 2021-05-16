@@ -8,10 +8,10 @@
     "screenshotOnRunFailure": true,
     "trashAssetsBeforeRuns": true,
     "env" : {
-        "baseUrl": "http://localhost:2368/",
+        "baseUrl": "http://localhost:2369/",
         "email" : "g.rosales@uniandes.edu.co",
         "pass": "misociclo2",
-        "baseUrl_2":"http://localhost:2368/ghost/",
+        "baseUrl_2":"http://localhost:2369/ghost/",
         "userEmail":"id.amarillo224@uniandes.edu.co",
         "userPsswd":"rock1020736329fantasma",
         "userEmail_selector":"#ember8",

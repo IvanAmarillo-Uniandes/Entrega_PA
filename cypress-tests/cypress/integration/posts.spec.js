@@ -1,6 +1,6 @@
 import { GhostPost } from "../page-objects/ghost-post";
 
-describe('Post', () => {
+describe('Posts', () => {
     
     const ghost = new GhostPost()
 
