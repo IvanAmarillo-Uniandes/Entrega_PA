@@ -1,10 +1,10 @@
 {
-    "baseUrl": "http://localhost:2368/",
+    "baseUrl": "http://localhost:2369/",
     "defaultCommandTimeout": 10000,
     "viewportWidth": 1920,
     "viewportHeight": 1080,
     "chromeWebSecurity":false,
-    "screenshotsFolder":"cypress/screenshots/v3.3.0",
+    "screenshotsFolder":"cypress/screenshots/v3.42.5",
     "screenshotOnRunFailure": true,
     "trashAssetsBeforeRuns": true,
     "env" : {
