@@ -20,9 +20,9 @@ describe('F2', () => {
         cy.get(Cypress.env('userPsswd_selector')).type(Cypress.env('pass'));
         cy.get(Cypress.env('loginButton_selector')).click();
         //Assert
-        cy.url({setTimeout:15000}).should('eq', Cypress.env('baseUrl_2') + '#/site');
+        cy.url({timeout:20000}).should('eq', Cypress.env('baseUrl_2') + '#/site');
         //Act
-        cy.get('a[href="#/page/"]').first().click();
+        cy.get('a[href="#/pages/"]', {timeout:20000}).first().click();
         //Assert
         cy.url({setTimeout:15000}).should('eq', Cypress.env('baseUrl_2') + '#/pages');
         cy.get('.gh-canvas-title').contains('Pages');
