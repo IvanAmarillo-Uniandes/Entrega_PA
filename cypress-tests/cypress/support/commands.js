@@ -36,7 +36,7 @@ Cypress.Commands.add('crearPage_Command', (pageTitle='(Untitled)') => {
 })
 
 Cypress.Commands.add('eliminarPage_Command', () => {
-    cy.get('a[title="Edit this post"]').first().click({force: true})
+    cy.get('li.gh-list-row.gh-posts-list-item > a').first().click({force: true})
     cy.get('button.post-settings').click({force:true})
     cy.get('form > .gh-btn > span').click({force:true})
     cy.get('button.gh-btn.gh-btn-red.gh-btn-icon.ember-view').first().click({force:true})
@@ -44,7 +44,7 @@ Cypress.Commands.add('eliminarPage_Command', () => {
 })
 
 Cypress.Commands.add('editarPage_Command', (newPageTitle, pos) => {
-    cy.get('li > a[title="Edit this post"]').eq(pos).click({force:true});
+    cy.get('li.gh-list-row.gh-posts-list-item > a').eq(pos).click({force:true});
     cy.get('div.gh-koenig-editor-pane.flex.flex-column.mih-100 > textarea').clear().type(newPageTitle);
     //cy.get('div.ember-view').first().click({force:true});   //just for saving changes
     cy.get('button.post-settings', {timeout:20000}).click({force:true})
@@ -56,7 +56,7 @@ Cypress.Commands.add('editarPage_Command', (newPageTitle, pos) => {
 })
 
 Cypress.Commands.add('publicarPage_Command', () => {
-    cy.get('a[title="Edit this post"]').first().click({force:true});
+    cy.get('li.gh-list-row.gh-posts-list-item > a').first().click({force:true});
     cy.get('div.gh-publishmenu.ember-view > div > span').click({force:true});
     cy.get('button.gh-btn.gh-btn-blue.gh-publishmenu-button.gh-btn-icon.ember-view').click({force:true});
     //cy.get('div.ember-view').first().click({force:true});   //just for saving changes
@@ -68,7 +68,7 @@ Cypress.Commands.add('publicarPage_Command', () => {
 })
 
 Cypress.Commands.add('tagPage_Command', (nuevoTag) => {
-    cy.get('a[title="Edit this post"]').first().click({force:true});
+    cy.get('li.gh-list-row.gh-posts-list-item > a').first().click({force:true});
     cy.get('button.post-settings').click({force:true});
     cy.get('input.ember-power-select-trigger-multiple-input').first().type(nuevoTag + '{enter}');
     //cy.get('div.ember-view').first().click({force:true});   //just for saving changes

@@ -16,8 +16,8 @@ describe('Pages', () => {
         //Arrange
         cy.visit('ghost/#/signin')
         //Act
-        cy.get(Cypress.env('userEmail_selector')).type(Cypress.env('email'));
-        cy.get(Cypress.env('userPsswd_selector')).type(Cypress.env('pass'));
+        cy.get(Cypress.env('userEmail_selector')).type(Cypress.env('userEmail'));
+        cy.get(Cypress.env('userPsswd_selector')).type(Cypress.env('userPsswd'));
         cy.get(Cypress.env('loginButton_selector')).click();
         //Assert
         cy.url({timeout:20000}).should('eq', Cypress.env('baseUrl_2') + '#/site');
