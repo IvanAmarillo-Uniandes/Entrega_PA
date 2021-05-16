@@ -19,14 +19,14 @@ describe('Staff', () => {
         cy.get("button.gh-btn.gh-btn-green").click();
         cy.get("#new-user-email").type(faker.internet.email());
         cy.get("div.modal-footer > button > span").click({force: true});
-    })
+    })    
 
-    it('E02-Elimina los datos del primer usuario invitado', () => { 
-        cy.get(":nth-child(1) > .apps-card-app > .apps-card-right > .apps-configured > .red-hover").click({force: true});
-    })
-
-    it('E03-Reenviar acceso de registro al usuario invitado', () => { 
+    it('E02-Reenviar acceso de registro al usuario invitado', () => { 
         cy.get(":nth-child(1) > .apps-card-app > .apps-card-right > .apps-configured > .green-hover").click({force: true});
+    })
+    
+    it('E03-Elimina los datos del primer usuario invitado', () => { 
+        cy.get(":nth-child(1) > .apps-card-app > .apps-card-right > .apps-configured > .red-hover").click({force: true});
     })
 
     it('E04-Accede a los datos del usuario registrado', () => { 
