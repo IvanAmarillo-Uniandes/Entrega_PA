@@ -20,9 +20,9 @@ describe('Tests para la funcionalidad Pages', () => {
         cy.get(Cypress.env('userPsswd_selector')).type(Cypress.env('userPsswd'));
         cy.get(Cypress.env('loginButton_selector')).click();
         //Assert
-        cy.url().should('eq', Cypress.env('baseUrl_2') + '#/site');
+        cy.url({timeout:20000}).should('eq', Cypress.env('baseUrl_2') + '#/site');
         //Act
-        cy.get('#ember30').click();
+        cy.get('a[href="#/pages/"]', {timeout:20000}).first().click();
         //Assert
         cy.url().should('eq', Cypress.env('baseUrl_2') + '#/pages');
         cy.get('.gh-canvas-title').contains('Pages');
