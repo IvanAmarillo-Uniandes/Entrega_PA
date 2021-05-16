@@ -1,7 +1,7 @@
-/// <reference types="cypress-xpath" />
+
 import { GhostPost } from "../page-objects/ghost-post";
 
-describe('F1 - Gestionar Posts', () => {
+describe('F1', () => {
     
     const ghost = new GhostPost()
 
@@ -9,6 +9,10 @@ describe('F1 - Gestionar Posts', () => {
         ghost.login()
         cy.url({ timeout: 20000 }).should('contain', '/site')
         ghost.goPosts()
+    })
+
+    afterEach(() => {
+        cy.screenshot()
     })
 
     it('E01 - Crear nuevo post y publicar', () => {

@@ -10,7 +10,9 @@ describe('staff', () => {
         cy.url({ timeout: 20000 }).should('contain', '/site')
         cy.visit(Cypress.env('baseUrl')+'ghost/#/staff');
     })  
-
+    afterEach(() => {
+        cy.screenshot()
+    })
     
     it('Tets creating an invitation to a staff', () => { 
         cy.get("button.gh-btn.gh-btn-green").click();

@@ -11,20 +11,20 @@
           content
 -------------------------------*/
 
-describe('Tests para la funcionalidad Pages', () => {
+describe('F2', () => {
     beforeEach(() => {
         //Arrange
-        cy.visit(Cypress.env('baseUrl_2') + '#/signin');
+        cy.visit('ghost/#/signin')
         //Act
-        cy.get(Cypress.env('userEmail_selector')).type(Cypress.env('userEmail'));
-        cy.get(Cypress.env('userPsswd_selector')).type(Cypress.env('userPsswd'));
+        cy.get(Cypress.env('userEmail_selector')).type(Cypress.env('email'));
+        cy.get(Cypress.env('userPsswd_selector')).type(Cypress.env('pass'));
         cy.get(Cypress.env('loginButton_selector')).click();
         //Assert
-        cy.url().should('eq', Cypress.env('baseUrl_2') + '#/site');
+        cy.url({setTimeout:15000}).should('eq', Cypress.env('baseUrl_2') + '#/site');
         //Act
-        cy.get('#ember30').click();
+        cy.get('a[href="#/page/"]').first().click();
         //Assert
-        cy.url().should('eq', Cypress.env('baseUrl_2') + '#/pages');
+        cy.url({setTimeout:15000}).should('eq', Cypress.env('baseUrl_2') + '#/pages');
         cy.get('.gh-canvas-title').contains('Pages');
         //Act
         /*
@@ -34,6 +34,10 @@ describe('Tests para la funcionalidad Pages', () => {
         cy.crearPage_Command('Page_4');
         cy.crearPage_Command('Page_5');
         */
+    })
+
+    afterEach(() => {
+        cy.screenshot()
     })
 /*
     after(() => {
@@ -64,7 +68,7 @@ describe('Tests para la funcionalidad Pages', () => {
       cy.eliminarPage_Command();
     })
 */
-    it('Crear nuevo Page', () => {
+    it('E01-Crear nuevo Page como Draft', () => {
         //Page_1
         let pageTitle = 'Page_1';
         cy.crearPage_Command(pageTitle);
@@ -82,7 +86,7 @@ describe('Tests para la funcionalidad Pages', () => {
         cy.crearPage_Command(pageTitle);
     })
 
-    it('Editar Page existente seleccionado', () => {
+    it('E02-Editar Page existente seleccionado', () => {
         //Edit Page_1
         let newPageTitle = 'Memo_1';
         cy.editarPage_Command(newPageTitle, 0);
@@ -100,14 +104,14 @@ describe('Tests para la funcionalidad Pages', () => {
         cy.editarPage_Command(newPageTitle, 3);
     })
 
-    it('Publicar Page seleccionado', () => {
+    it('E03-Publicar Page seleccionado', () => {
         cy.publicarPage_Command();
         cy.publicarPage_Command();
         cy.publicarPage_Command();
         cy.publicarPage_Command();
     })
 
-    it('Agregar Tag al Page seleccionado', () => {
+    it('E04-Agregar Tag al Page seleccionado', () => {
         cy.tagPage_Command('ivanAmar');
         cy.tagPage_Command('ia');
         cy.tagPage_Command('oe');
@@ -115,7 +119,7 @@ describe('Tests para la funcionalidad Pages', () => {
 
     })
 
-    it('Eliminar Page existente seleccionado', () => {
+    it('E05-Eliminar Page existente seleccionado', () => {
         cy.eliminarPage_Command();
         cy.eliminarPage_Command();
         cy.eliminarPage_Command();

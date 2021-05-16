@@ -31,6 +31,12 @@ export class GhostPost {
         cy.get('#login').submit()
     }
 
+    loginUserOnly() {
+        cy.visit('ghost/#/signin')
+        cy.get('#ember8').type(Cypress.env('email'))
+        cy.get('#login').submit() 
+    }
+
     goPosts() {
         cy.visit('ghost/#/posts')
     }

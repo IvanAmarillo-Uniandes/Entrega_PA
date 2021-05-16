@@ -12,6 +12,11 @@ describe('Tags', () => {
         ghost.goTags()
       
     })
+
+    afterEach(() => {
+        cy.screenshot()
+    })
+    
     it('Should edit a public tag', () => {
         ghost.selectTag()
         cy.get('#tag-name').clear()

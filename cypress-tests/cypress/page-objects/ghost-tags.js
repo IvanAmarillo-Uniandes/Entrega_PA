@@ -31,12 +31,4 @@ export class GhostTag {
         cy.get('ol.tags-list',{ timeout: 10000 }).find('li.gh-tags-list-item > a').first().click({ force: true })
     }
     
-    selectInternalTag() {
-        cy.get('div.gh-contentfilter').find('button.gh-btn > span').contains('Internal tags').click({ force: true })
-        cy.get('ol.tags-list',{ timeout: 10000 }).find('li.gh-tags-list-item > a').first().click({ force: true })
-    }
-   
-
-   
-
 }
