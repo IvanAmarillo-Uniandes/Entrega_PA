@@ -2,9 +2,9 @@ Feature: Tags
 
   @user1 @web
   Scenario: Should edit a public tag
-    Given I navigate to page "http://localhost:2368/ghost/#/signin"
-    Then I enter "g.rosales@uniandes.edu.co" into input field having id "ember8"
-    Then I enter "misociclo2" into input field having id "ember10"
+    Given I navigate to page "<URL>"
+    Then I enter "<EMAIL>" into input field having id "ember8"
+    Then I enter "<PASSWORD>" into input field having id "ember10"
     Then I click on element having id "ember12"
     Then I wait
     Then I click on element having css selector "a[href='#/tags/']"
@@ -18,9 +18,9 @@ Feature: Tags
   
   @user2 @web
   Scenario: Should edit a internal tag
-    Given I navigate to page "http://localhost:2368/ghost/#/signin"
-    Then I enter "g.rosales@uniandes.edu.co" into input field having id "ember8"
-    Then I enter "misociclo2" into input field having id "ember10"
+    Given I navigate to page "<URL>"
+    Then I enter "<EMAIL>" into input field having id "ember8"
+    Then I enter "<PASSWORD>" into input field having id "ember10"
     Then I click on element having id "ember12"
     Then I wait
     Then I click on element having css selector "a[href='#/tags/']"
@@ -35,9 +35,9 @@ Feature: Tags
 
  @user3 @web
   Scenario: Should delete a public tag
-    Given I navigate to page "http://localhost:2368/ghost/#/signin"
-    Then I enter "g.rosales@uniandes.edu.co" into input field having id "ember8"
-    Then I enter "misociclo2" into input field having id "ember10"
+    Given I navigate to page "<URL>"
+    Then I enter "<EMAIL>" into input field having id "ember8"
+    Then I enter "<PASSWORD>" into input field having id "ember10"
     Then I click on element having id "ember12"
     Then I wait
     Then I click on element having css selector "a[href='#/tags/']"
@@ -48,9 +48,9 @@ Feature: Tags
 
  @user4 @web
   Scenario: Should error by more description characters
-    Given I navigate to page "http://localhost:2368/ghost/#/signin"
-    Then I enter "g.rosales@uniandes.edu.co" into input field having id "ember8"
-    Then I enter "misociclo2" into input field having id "ember10"
+    Given I navigate to page "<URL>"
+    Then I enter "<EMAIL>" into input field having id "ember8"
+    Then I enter "<PASSWORD>" into input field having id "ember10"
     Then I click on element having id "ember12"
     Then I wait
     Then I click on element having css selector "a[href='#/tags/']"
