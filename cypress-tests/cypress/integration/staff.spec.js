@@ -21,7 +21,7 @@ describe('staff', () => {
     })
 
     it('Tets deletes the data of the first guest users', () => { 
-        cy.get(":nth-child(40) > .apps-card-app > .apps-card-right > .apps-configured > .red-hover").click({force: true});
+        cy.get(":nth-child(1) > .apps-card-app > .apps-card-right > .apps-configured > .red-hover").click({force: true});
     })
 
     it('Tets resend an invitation to a staff', () => { 
