@@ -18,13 +18,13 @@ describe('staff', () => {
         cy.get("div.modal-footer > button > span").click({force: true});
     })
 
-    it('Tets deletes the data of the first guest users', () => { 
-        cy.get(":nth-child(1) > .apps-card-app > .apps-card-right > .apps-configured > .red-hover").click({force: true});
-    })
-
     it('Tets resend an invitation to a staff', () => { 
         cy.get(":nth-child(1) > .apps-card-app > .apps-card-right > .apps-configured > .green-hover").click({force: true});
     })
+
+    it('Tets deletes the data of the first guest users', () => { 
+        cy.get(":nth-child(1) > .apps-card-app > .apps-card-right > .apps-configured > .red-hover").click({force: true});
+    })    
 
     it('Tets accesses the data of the registered user and imagen', () => { 
         cy.get(".apps-card-app > .apps-card-right > .apps-configured").click({force: true});
