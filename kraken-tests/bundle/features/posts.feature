@@ -2,9 +2,9 @@ Feature: Gestion de Posts
 
     @user1 @web
     Scenario: Create new post and publish it
-        Given I navigate to page "http://localhost:2368/ghost/#/signin"
-        Then I enter "g.rosales@uniandes.edu.co" into input field having id "ember8"
-        Then I enter "misociclo2" into input field having id "ember10"
+        Given I navigate to page "<URL>"
+        Then I enter "<EMAIL>" into input field having id "ember8"
+        Then I enter "<PASSWORD>" into input field having id "ember10"
         Then I click on element having id "ember12"
         Then I click on element having css selector "li.gh-nav-list-new a.gh-nav-new-post"
         Then I enter "Create new post from Kraken title" into input field having css selector ".gh-editor-title"
@@ -17,11 +17,11 @@ Feature: Gestion de Posts
 
     @user2 @web
     Scenario: Edit title of a post
-        Given I navigate to page "http://localhost:2368/ghost/#/signin"
-        Then I enter "g.rosales@uniandes.edu.co" into input field having id "ember8"
-        Then I enter "misociclo2" into input field having id "ember10"
+        Given I navigate to page "<URL>"
+        Then I enter "<EMAIL>" into input field having id "ember8"
+        Then I enter "<PASSWORD>" into input field having id "ember10"
         Then I click on element having id "ember12"
-        Then I navigate to page "http://localhost:2368/ghost/#/posts"
+        Then I navigate to page "<URL_POSTS>"
         Then I click on element having css selector "ol.posts-list.gh-list li a.gh-post-list-status > div > span.gh-content-status-published"
         Then I enter "Edit title of a post from Kraken" into input field having css selector ".gh-editor-title"
         Then I enter "Edit description of a post from Kraken" into input field having css selector "div.koenig-editor__editor.__mobiledoc-editor"
@@ -35,11 +35,11 @@ Feature: Gestion de Posts
 
     @user3 @web
     Scenario: Change the status of a Post
-        Given I navigate to page "http://localhost:2368/ghost/#/signin"
-        Then I enter "g.rosales@uniandes.edu.co" into input field having id "ember8"
-        Then I enter "misociclo2" into input field having id "ember10"
+        Given I navigate to page "<URL>"
+        Then I enter "<EMAIL>" into input field having id "ember8"
+        Then I enter "<PASSWORD>" into input field having id "ember10"
         Then I click on element having id "ember12"
-        Then I navigate to page "http://localhost:2368/ghost/#/posts"
+        Then I navigate to page "<URL_POSTS>"
         Then I click on element having css selector "ol.posts-list.gh-list li a.gh-post-list-status > div > span.gh-content-status-published"
         Then I click on element having css selector "div.gh-publishmenu > div.gh-publishmenu-trigger"
         Then I wait for 5 seconds
@@ -50,11 +50,11 @@ Feature: Gestion de Posts
 
     @user4 @web
     Scenario: Delete a Post
-        Given I navigate to page "http://localhost:2368/ghost/#/signin"
-        Then I enter "g.rosales@uniandes.edu.co" into input field having id "ember8"
-        Then I enter "misociclo2" into input field having id "ember10"
+        Given I navigate to page "<URL>"
+        Then I enter "<EMAIL>" into input field having id "ember8"
+        Then I enter "<PASSWORD>" into input field having id "ember10"
         Then I click on element having id "ember12"
-        Then I navigate to page "http://localhost:2368/ghost/#/posts"
+        Then I navigate to page "<URL_POSTS>"
         Then I click on element having css selector "ol.posts-list.gh-list li a.gh-post-list-status > div > span.gh-content-status-published"
         Then I wait for 5 seconds
         Then I click on element having css selector "button.post-settings"

@@ -6,8 +6,9 @@
 - Instalar dependiencias `npm install`
 
 ### Configuracion
-- Cambiar el valor de `baseUrl` en el `cypress.json` a la URL de la instacia de Ghost a probar
-- Cambiar el valor de `email` y `pass` en el archivo `cypress.jon` con las credeciales que corresponden al usuario administrador correspondiente
+- Cambiar el valor de `baseUrl` y `baseUrl_2` en el `cypress.json` a la URL de la instacia de Ghost a probar
+- Cambiar el valor de `email` y `pass` en el archivo `cypress.jon` con las credeciales que corresponden al usuario administrador
+- Cambiar el valor de la version en la carpeta de screenshots  `"screenshotsFolder":"cypress/screenshots/v3.42.5"` segun se quiera ejecutar en el `cypress.jon`
 
 ### Ejecucion
 - Correr `cypress open` seleccionar la carteta donde se encuentran las pruebas
