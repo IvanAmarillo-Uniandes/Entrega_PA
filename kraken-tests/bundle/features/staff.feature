@@ -22,7 +22,7 @@ Feature: Shared board connection
     Then I click on element having css selector ".gh-btn.gh-btn-green"
     Then I enter "$email_1" into input field having id "new-user-email"   
     Then I click on element having css selector ".gh-btn.gh-btn-green.gh-btn-icon.ember-view"
-    Then I touch the "Send invitation now" text
+
     
    
     
