@@ -16,7 +16,7 @@ El detalle de la instalacion, configurcion se encentra en la carpeta que coressp
 
 # Escenarios de pruebas
 
-## F1
+## F1 - Gestionar Posts 
 
 | ID           | Nombre                                              | Pasos                                                                                                      | Resultado esperado |
 | ------------ | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------- |
@@ -41,7 +41,7 @@ El detalle de la instalacion, configurcion se encentra en la carpeta que coressp
 |     |                             | 5. Abrir configuraciones | | 
 |     |                             | 4. Seleccionar "Delete post" | |
 
-## F2
+## F2 - Gestionar Pages
 
 | ID           | Nombre                                              | Pasos                                                                                                      | Resultado esperado |
 | ------------ | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------- |
@@ -74,7 +74,7 @@ El detalle de la instalacion, configurcion se encentra en la carpeta que coressp
 |     |                             | 4. Seleccionar "Delete" para borrar el Page | |
 |     |                             | 5. Salir del editor del Page a ventana de Pages | | 
 
-##  F3 Funcionalidad Gestionar Staff 
+##  F3 - Funcionalidad Gestionar Staff 
 
 | ID| Nombre | Pasos | Resultado esperado |
 | - |  -     |  -    | - |
@@ -83,7 +83,7 @@ El detalle de la instalacion, configurcion se encentra en la carpeta que coressp
 |E03|**Tets reenviar acceso de registro al usuario invitado** |**1.** Al ver el listado de Staff users. <br>**2.** Hacer click en el link RESEND. (Invitation sent: an hour ago, expires in 7 days)  <br>**3.** El usuarias invitadas se recibe de nuevo los datos de acceso.  | Se evidencia el mesaje de envio de correo al usuario reenviado.|
 |E04|**Tets accede a los datos del usuario registrado**|**1.** Al ver el listado de ACTIVE USERS. <br>**2.** Hacer click en el sobre el.  <br>**3.** El usuario accede a esta opción se puede ver la información de: foto de perfil, Full Name, Slug, Email,  Location, Website, etc. | Al seleccionar el usuario del listado de de ACTIVE USERS, lo direcciona a la ventana donde se puede ver la información del usuario seleccionado. |
 
-## F4
+## F4 - Gestionar Tags
 
 | ID           | Nombre                                              | Pasos                                                                                                      | Resultado esperado |
 | ------------ | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------- |
@@ -116,3 +116,14 @@ El detalle de la instalacion, configurcion se encentra en la carpeta que coressp
 |E01|**Ingresar credenciales incorrectas**| **1.** Ingresar a la pagina de logueo. <br> **2.** Se ingresa usuario, para este este el correo (incorrecto). <br> **3.** Se ingresa password, para este caso clave de acceso (incorresta). <br> **4.** Hacer click en el botón Ingresar. <br>| El Sistema le informa al usuario que sus credenciales de acceso son incorrectos, sin permitir el acceso.  |
 |E02|**Debe iniciar sesión correctamente**  |**1.** Ingresar a la pagina de logueo. <br> **2.** Se ingresa usuario, para este este el correo. <br> **3.** Se ingresa password, para este caso clave de acceso. <br> **4.** Hacer click en el botón Ingresar. <br>| El Sistema le informa al usuario que sus credenciales de acceso son correctas, y le permite el acceso.  |
 |E03|**Ingresar solo usuario**  |**1.** Ingresar a la pagina de logueo. <br> **2.** Se ingresa usuario, para este este el correo. <br>  **3.** Hacer click en el botón Ingresar. <br>| El Sistema le informa al usuario que debe completar todos los campos.  |
+----
+#Funcionalidades a comparar `Resembler.js`
+- Login - E01 Ingresar credenciales incorrectas
+- Post - E01 Crear post y publicar
+- Pages - E01 Crear nuevo page como draf
+- Staff - E01 Crear una invitacion
+- Tags - E01 Editar un tag publico
+
+
+
+
