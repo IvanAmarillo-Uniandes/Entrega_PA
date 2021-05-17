@@ -117,7 +117,7 @@ El detalle de la instalacion, configurcion se encentra en la carpeta que coressp
 |E02|**Debe iniciar sesión correctamente**  |**1.** Ingresar a la pagina de logueo. <br> **2.** Se ingresa usuario, para este este el correo. <br> **3.** Se ingresa password, para este caso clave de acceso. <br> **4.** Hacer click en el botón Ingresar. <br>| El Sistema le informa al usuario que sus credenciales de acceso son correctas, y le permite el acceso.  |
 |E03|**Ingresar solo usuario**  |**1.** Ingresar a la pagina de logueo. <br> **2.** Se ingresa usuario, para este este el correo. <br>  **3.** Hacer click en el botón Ingresar. <br>| El Sistema le informa al usuario que debe completar todos los campos.  |
 ----
-#Funcionalidades a comparar `Resembler.js`
+# Funcionalidades a comparar `Resembler.js`
 - Login - E01 Ingresar credenciales incorrectas
 - Post - E01 Crear post y publicar
 - Pages - E01 Crear nuevo page como draf
