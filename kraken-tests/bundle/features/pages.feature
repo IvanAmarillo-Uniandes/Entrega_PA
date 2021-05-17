@@ -25,7 +25,7 @@ Feature: Shared board connection
     Then I wait for 2 seconds
     Then I navigate to page "<URL_PAGES>"
     Then I wait for 5 seconds
-    Then I click on element having css selector "a[title='Edit this post']"
+    Then I click on element having css selector "li.gh-list-row.gh-posts-list-item > a"
     Then I wait for 5 seconds
     Then I enter "Page_1_Modified" into input field having css selector "div.gh-koenig-editor-pane.flex.flex-column.mih-100 > textarea"
     Then I click on element having css selector "span.fw4.midgrey-l2"
@@ -41,7 +41,7 @@ Feature: Shared board connection
     Then I wait for 2 seconds
     Then I navigate to page "<URL_PAGES>"
     Then I wait for 5 seconds
-    Then I click on element having css selector "a[title='Edit this post']"
+    Then I click on element having css selector "li.gh-list-row.gh-posts-list-item > a"
     Then I wait for 5 seconds
     Then I click on element having css selector "div.gh-publishmenu.ember-view > div > span"
     Then I click on element having css selector "button.gh-btn.gh-btn-blue.gh-publishmenu-button.gh-btn-icon.ember-view"
@@ -58,7 +58,7 @@ Feature: Shared board connection
     Then I wait for 2 seconds
     Then I navigate to page "<URL_PAGES>"
     Then I wait for 5 seconds
-    Then I click on element having css selector "a[title='Edit this post']"
+    Then I click on element having css selector "li.gh-list-row.gh-posts-list-item > a"
     Then I wait for 5 seconds
     Then I click on element having css selector "button.post-settings"
     Then I enter "newTag" into input field having css selector "input.ember-power-select-trigger-multiple-input"
@@ -75,7 +75,7 @@ Feature: Shared board connection
     Then I wait for 2 seconds
     Then I navigate to page "<URL_PAGES>"
     Then I wait for 5 seconds
-    Then I click on element having css selector "a[title='Edit this post']"
+    Then I click on element having css selector "li.gh-list-row.gh-posts-list-item > a"
     Then I wait for 5 seconds
     Then I click on element having css selector "button.post-settings"
     Then I click on element having css selector "form > .gh-btn > span"
