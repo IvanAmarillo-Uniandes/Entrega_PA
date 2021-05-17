@@ -8,6 +8,12 @@ Feature: Tags
     Then I click on element having id "ember12"
     Then I wait
     Then I click on element having css selector "a[href='#/tags/']"
+    Then I click on element having css selector "section.view-actions a.gh-btn-green"
+    Then I enter "hello" into input field having id "tag-name"
+    Then I enter "hello" into input field having id "tag-slug"
+    Then I enter "hello" into input field having id "tag-description"
+    Then I click on element having css selector "button.gh-btn > span"
+    Then I click on element having css selector "a[href='#/tags/']"
     Then I click on element having css selector "ol.tags-list > li.gh-tags-list-item "
     Then I enter "hello" into input field having id "tag-name"
     Then I enter "hello" into input field having id "tag-slug"
@@ -23,6 +29,12 @@ Feature: Tags
     Then I enter "misociclo2" into input field having id "ember10"
     Then I click on element having id "ember12"
     Then I wait
+    Then I click on element having css selector "a[href='#/tags/']"
+    Then I click on element having css selector "section.view-actions a.gh-btn-green"
+    Then I enter "#hello" into input field having id "tag-name"
+    Then I enter "hello" into input field having id "tag-slug"
+    Then I enter "hello" into input field having id "tag-description"
+    Then I click on element having css selector "button.gh-btn > span"
     Then I click on element having css selector "a[href='#/tags/']"
     Then I click on element having css selector "div.gh-contentfilter button:nth-child(2)"
     Then I click on element having css selector "ol.tags-list > li.gh-tags-list-item "
@@ -41,6 +53,12 @@ Feature: Tags
     Then I click on element having id "ember12"
     Then I wait
     Then I click on element having css selector "a[href='#/tags/']"
+    Then I click on element having css selector "section.view-actions a.gh-btn-green"
+    Then I enter "hello" into input field having id "tag-name"
+    Then I enter "hello" into input field having id "tag-slug"
+    Then I enter "hello" into input field having id "tag-description"
+    Then I click on element having css selector "button.gh-btn > span"
+    Then I click on element having css selector "a[href='#/tags/']"
     Then I click on element having css selector "ol.tags-list > li.gh-tags-list-item "
     Then I click on element having css selector "button.gh-btn-red"
     Then I click on element having css selector "div.modal-footer button:nth-child(2)"
@@ -54,8 +72,16 @@ Feature: Tags
     Then I click on element having id "ember12"
     Then I wait
     Then I click on element having css selector "a[href='#/tags/']"
+    Then I click on element having css selector "section.view-actions a.gh-btn-green"
+    Then I enter "hello" into input field having id "tag-name"
+    Then I enter "hello" into input field having id "tag-slug"
+    Then I enter "hello" into input field having id "tag-description"
+    Then I click on element having css selector "button.gh-btn > span"
+    Then I click on element having css selector "a[href='#/tags/']"
     Then I click on element having css selector "ol.tags-list > li.gh-tags-list-item "
     Then I enter "hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello" into input field having id "tag-description"
     Then I click on element having css selector "button.gh-btn > span"
     Then I should see text "Description cannot be longer than 500 characters."
     
+
+  
