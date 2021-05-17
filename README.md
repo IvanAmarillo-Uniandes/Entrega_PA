@@ -3,6 +3,8 @@ Repositorio para la entrega de pruebas automatizadas utilizando Cypress y Kraken
 
 El detalle de la instalacion, configurcion se encentra en la carpeta que coressponde a cada herramienta.
 
+* [Instrucciones para la ejecución](../../wiki/Instrucciones-para-la-ejecución)
+
 # Funcionalidades
 | Id           | Nombre Funcionalidad                                              | Resumen                                                                                                      | Encargado |
 | ------------ | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------- |
