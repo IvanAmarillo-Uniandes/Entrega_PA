@@ -9,7 +9,7 @@ Feature: Shared board connection
     Then I wait for 2 seconds
     Then I navigate to page "<URL_PAGES>"
     Then I wait for 5 seconds
-    Then I click on element having css selector "a[href='#/editor/page/']"
+    Then I click on element having css selector 'a[href="#/editor/page/"]'
     Then I wait for 5 seconds
     Then I enter "Page_1" into input field having css selector "div.gh-koenig-editor-pane.flex.flex-column.mih-100 > textarea"
     Then I click on element having css selector "span.fw4.midgrey-l2"
