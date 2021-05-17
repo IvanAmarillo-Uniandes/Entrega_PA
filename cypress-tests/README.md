@@ -1,5 +1,7 @@
 # cypress-test
 
+Las pruebas estan creadas para Ghost de manera local `v3.3.0` y `v3.42.5` para la instalacion siga las instrucciones siguientes instrucciones: https://ghost.org/docs/ghost-cli/#ghost-install.
+
 ### Instalcion
 - Descargar repositorio
 - Ir al directorio raiz de cypress `cd cypress-test`
